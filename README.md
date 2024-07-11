@@ -52,10 +52,11 @@ To get started with mirroring your Android device on your Linux PC, follow the s
 
 ### Uninstall
 
-    - Run the uninstall.sh script to uninstall scrcpy and sndcpy
-    ```bash
-    ./uninstall.sh
-    ```
+- Run the uninstall.sh script to uninstall scrcpy and sndcpy
+
+```bash
+./uninstall.sh
+```
 
 ### Usage
 
