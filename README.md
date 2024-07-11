@@ -40,14 +40,15 @@ To get started with mirroring your Android device on your Linux PC, follow the s
 
 Execute the `setup.sh` script to install `scrcpy`, `sndcpy`, and any other necessary dependencies. This script will also perform initial setup tasks.
 
-    ```bash
-    ./setup.sh
-    ```
-    You might need to grant execution permissions to the script before running it:
+```bash
+./setup.sh
+```
 
-    ```bash
-    chmod +x setup.sh
-    ```
+You might need to grant execution permissions to the script before running it:
+
+```bash
+chmod +x setup.sh
+```
 
 ### Usage
 
