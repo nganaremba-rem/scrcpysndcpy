@@ -38,24 +38,24 @@ To get started with mirroring your Android device on your Linux PC, follow the s
 
 3. **Run the Setup Script**
 
-Execute the `setup.sh` script to install `scrcpy`, `sndcpy`, and any other necessary dependencies. This script will also perform initial setup tasks.
+   Execute the `setup.sh` script to install `scrcpy`, `sndcpy`, and any other necessary dependencies. This script will also perform initial setup tasks.
 
-```bash
-./setup.sh
-```
+   ```bash
+   ./setup.sh
+   ```
 
-You might need to grant execution permissions to the script before running it:
+   You might need to grant execution permissions to the script before running it:
 
-```bash
-chmod +x setup.sh
-```
+   ```bash
+   chmod +x setup.sh
+   ```
 
 ### Usage
 
-After installation, connect your Android device to your Linux PC using a USB cable. Make sure USB debugging is enabled on your device. Then, follow any on-screen instructions to start mirroring your device.
+    After installation, connect your Android device to your Linux PC using a USB cable. Make sure USB debugging is enabled on your device. Then, follow any on-screen instructions to start mirroring your device.
 
-For detailed usage instructions and troubleshooting, refer to the documentation provided within the repository or the official `scrcpy` and `sndcpy` documentation.
+    For detailed usage instructions and troubleshooting, refer to the documentation provided within the repository or the official `scrcpy` and `sndcpy` documentation.
 
 ### Contributing
 
-Contributions are welcome! Please feel free to submit pull requests or open issues to improve the repository or add new features.
+    Contributions are welcome! Please feel free to submit pull requests or open issues to improve the repository or add new features.
