@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Function to start processes
+start_processes() {
+    fullscreen=$1
+
+    if [ "$fullscreen" -eq 1 ]; then
+        scrcpy -f --stay-awake & echo $! > $HOME/scrcpy.pid
+    else
+        scrcpy --stay-awake & echo $! > $HOME/scrcpy.pid
+    fi
+
+    # Run sndcpy in the background and store its PID
+    sndcpy & echo $! > $HOME/sndcpy.pid
+
+    echo "scrcpy and sndcpy started. Use 'stop' argument to stop them."
+}
+
+# Function to stop processes
+stop_processes() {
+    # Stop scrcpy
+    if [ -f $HOME/scrcpy.pid ]; then
+        kill $(cat $HOME/scrcpy.pid)
+        rm $HOME/scrcpy.pid
+    else
+        echo "scrcpy process not found or already stopped."
+    fi
+
+    # Stop sndcpy
+    if [ -f $HOME/sndcpy.pid ]; then
+        SNDCPY_PID=$(cat $HOME/sndcpy.pid)
+	kill $(pgrep -P $SNDCPY_PID vlc)
+        kill $SNDCPY_PID
+        rm $HOME/sndcpy.pid
+    else
+        echo "sndcpy process not found or already stopped."
+    fi
+}
+
+# Main script logic
+if [ "$1" == "f" ]; then
+  start_processes 1  # Pass 1 for fullscreen, 0 or any other value for windowed
+elif [ "$1" == "" ]; then
+  start_processes 0
+elif [ "$1" == "stop" ]; then
+    stop_processes
+else
+    echo "Usage: $0 [start <fullscreen>] | [stop]"
+    echo "   start <fullscreen>: Start scrcpy in fullscreen (1) or windowed (0)"
+    echo "   stop: Stop scrcpy and sndcpy"
+    exit 1
+fi
