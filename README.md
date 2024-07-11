@@ -50,6 +50,13 @@ To get started with mirroring your Android device on your Linux PC, follow the s
    chmod +x setup.sh
    ```
 
+### Uninstall
+
+    - Run the uninstall.sh script to uninstall scrcpy and sndcpy
+    ```bash
+    ./uninstall.sh
+    ```
+
 ### Usage
 
 After installation, connect your Android device to your Linux PC using a USB cable. Make sure USB debugging is enabled on your device. Then, follow any on-screen instructions to start mirroring your device.
