@@ -52,10 +52,10 @@ To get started with mirroring your Android device on your Linux PC, follow the s
 
 ### Usage
 
-    After installation, connect your Android device to your Linux PC using a USB cable. Make sure USB debugging is enabled on your device. Then, follow any on-screen instructions to start mirroring your device.
+After installation, connect your Android device to your Linux PC using a USB cable. Make sure USB debugging is enabled on your device. Then, follow any on-screen instructions to start mirroring your device.
 
-    For detailed usage instructions and troubleshooting, refer to the documentation provided within the repository or the official `scrcpy` and `sndcpy` documentation.
+For detailed usage instructions and troubleshooting, refer to the documentation provided within the repository or the official `scrcpy` and `sndcpy` documentation.
 
 ### Contributing
 
-    Contributions are welcome! Please feel free to submit pull requests or open issues to improve the repository or add new features.
+Contributions are welcome! Please feel free to submit pull requests or open issues to improve the repository or add new features.
